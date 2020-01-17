@@ -41,7 +41,8 @@ public class EngineApplicationService {
 			e.printStackTrace();
 		}
 	}
-
+	
+	
 	List<String> print() {
 		
 		initializeGraphManager();
