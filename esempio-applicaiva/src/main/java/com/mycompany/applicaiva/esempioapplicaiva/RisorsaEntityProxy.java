@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @Repository 
-@FeignClient(name="risorsa") 
-@RibbonClient(name="risorsa")
+@FeignClient(name="risorsa") //
+@RibbonClient(name="risorsa") // uso eureka 
 public interface RisorsaEntityProxy {
     @GetMapping("/valore-iva/from/{nation}")
     public int recuperaIva(@PathVariable("nation") String nation);

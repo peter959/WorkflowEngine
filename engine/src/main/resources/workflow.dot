@@ -1,0 +1,11 @@
+digraph G{
+   // start->risorsa;
+    start->a;
+    start->b;
+    start->c;
+    a->e;
+    a->d;
+    b->d;
+    c->f;
+    f->e;
+}

@@ -1,0 +1,57 @@
+[2020/01/15 16:00:54] INFO: an info msg 
+[2020/01/15 16:00:54] INFO: Avvio procedura di parsing 
+[2020/01/15 16:00:54] INFO: Parsing completato 
+[2020/01/15 16:00:54] INFO: Inizio procedura BFS 
+[2020/01/15 16:00:54] INFO: Creazione mappa [GraphNode, Indice] 
+[2020/01/15 16:00:54] INFO: Creazione mappa completata 
+[2020/01/15 16:00:54] INFO: Elemento di partenza visitato ed inserito nella coda 
+[2020/01/15 16:00:54] INFO: Elemento uscito dalla coda e stampato: start 
+[2020/01/15 16:00:54] INFO: Numero di nodi contati: 7 
+[2020/01/15 16:00:54] INFO: nodo next a 
+[2020/01/15 16:00:54] INFO: Var counter = 3 
+[2020/01/15 16:00:54] INFO: var nfr = 0 
+[2020/01/15 16:00:54] INFO: Ho visitato l'elemento a 
+[2020/01/15 16:00:54] INFO: Ho inserito nella coda a 
+[2020/01/15 16:00:54] INFO: nodo next b 
+[2020/01/15 16:00:54] INFO: Var counter = 2 
+[2020/01/15 16:00:54] INFO: var nfr = 1 
+[2020/01/15 16:00:54] INFO: Ho visitato l'elemento b 
+[2020/01/15 16:00:54] INFO: Ho inserito nella coda b 
+[2020/01/15 16:00:54] INFO: nodo next c 
+[2020/01/15 16:00:54] INFO: Var counter = 1 
+[2020/01/15 16:00:54] INFO: var nfr = 2 
+[2020/01/15 16:00:54] INFO: Ho visitato l'elemento c 
+[2020/01/15 16:00:54] INFO: Ho inserito nella coda c 
+[2020/01/15 16:00:54] INFO: Elemento uscito dalla coda e stampato: a 
+[2020/01/15 16:00:54] INFO: Numero di nodi contati: 6 
+[2020/01/15 16:00:54] INFO: nodo next d 
+[2020/01/15 16:00:54] INFO: Var counter = 2 
+[2020/01/15 16:00:54] INFO: var nfr = 0 
+[2020/01/15 16:00:54] INFO: Ho visitato l'elemento d 
+[2020/01/15 16:00:54] INFO: Ho inserito nella coda d 
+[2020/01/15 16:00:54] INFO: nodo next e 
+[2020/01/15 16:00:54] INFO: Var counter = 1 
+[2020/01/15 16:00:54] INFO: var nfr = 1 
+[2020/01/15 16:00:54] INFO: Elemento uscito dalla coda e stampato: b 
+[2020/01/15 16:00:54] INFO: Numero di nodi contati: 5 
+[2020/01/15 16:00:54] INFO: nodo next d 
+[2020/01/15 16:00:54] INFO: Var counter = 1 
+[2020/01/15 16:00:54] INFO: var nfr = 0 
+[2020/01/15 16:00:54] INFO: Elemento uscito dalla coda e stampato: c 
+[2020/01/15 16:00:54] INFO: Numero di nodi contati: 4 
+[2020/01/15 16:00:54] INFO: nodo next f 
+[2020/01/15 16:00:54] INFO: Var counter = 1 
+[2020/01/15 16:00:54] INFO: var nfr = 0 
+[2020/01/15 16:00:54] INFO: Ho visitato l'elemento f 
+[2020/01/15 16:00:54] INFO: Ho inserito nella coda f 
+[2020/01/15 16:00:54] INFO: Elemento uscito dalla coda e stampato: d 
+[2020/01/15 16:00:54] INFO: Numero di nodi contati: 3 
+[2020/01/15 16:00:54] INFO: Elemento uscito dalla coda e stampato: f 
+[2020/01/15 16:00:54] INFO: Numero di nodi contati: 2 
+[2020/01/15 16:00:54] INFO: nodo next e 
+[2020/01/15 16:00:54] INFO: Var counter = 1 
+[2020/01/15 16:00:54] INFO: var nfr = 0 
+[2020/01/15 16:00:54] INFO: Ho visitato l'elemento e 
+[2020/01/15 16:00:54] INFO: Ho inserito nella coda e 
+[2020/01/15 16:00:54] INFO: Elemento uscito dalla coda e stampato: e 
+[2020/01/15 16:00:54] INFO: Numero di nodi contati: 1 
