@@ -1,33 +1,33 @@
-[2020/01/18 19:05:20] INFO: an info msg 
-[2020/01/18 19:05:20] INFO: Avvio procedura di parsing 
-[2020/01/18 19:05:20] INFO: Parsing completato 
-[2020/01/18 19:05:20] INFO: Inizio procedura BFS 
-[2020/01/18 19:05:20] INFO: Creazione mappa [GraphNode, Indice] 
-[2020/01/18 19:05:20] INFO: Creazione mappa completata 
-[2020/01/18 19:05:20] INFO: Elemento di partenza visitato ed inserito nella coda 
-[2020/01/18 19:05:20] INFO: Elemento uscito dalla coda e stampato: start 
-[2020/01/18 19:05:20] INFO: Numero di nodi contati: 4 
-[2020/01/18 19:05:20] INFO: nodo next MSA 
-[2020/01/18 19:05:20] INFO: Var counter = 2 
-[2020/01/18 19:05:20] INFO: var nfr = 0 
-[2020/01/18 19:05:20] INFO: Ho visitato l'elemento MSA 
-[2020/01/18 19:05:20] INFO: Ho inserito nella coda MSA 
-[2020/01/18 19:05:20] INFO: nodo next MSB 
-[2020/01/18 19:05:20] INFO: Var counter = 1 
-[2020/01/18 19:05:20] INFO: var nfr = 1 
-[2020/01/18 19:05:20] INFO: Ho visitato l'elemento MSB 
-[2020/01/18 19:05:20] INFO: Ho inserito nella coda MSB 
-[2020/01/18 19:05:20] INFO: Elemento uscito dalla coda e stampato: MSA 
-[2020/01/18 19:05:20] INFO: Numero di nodi contati: 3 
-[2020/01/18 19:05:20] INFO: nodo next MSC 
-[2020/01/18 19:05:20] INFO: Var counter = 1 
-[2020/01/18 19:05:20] INFO: var nfr = 0 
-[2020/01/18 19:05:20] INFO: Ho visitato l'elemento MSC 
-[2020/01/18 19:05:20] INFO: Ho inserito nella coda MSC 
-[2020/01/18 19:05:20] INFO: Elemento uscito dalla coda e stampato: MSB 
-[2020/01/18 19:05:20] INFO: Numero di nodi contati: 2 
-[2020/01/18 19:05:20] INFO: nodo next MSC 
-[2020/01/18 19:05:20] INFO: Var counter = 1 
-[2020/01/18 19:05:20] INFO: var nfr = 0 
-[2020/01/18 19:05:20] INFO: Elemento uscito dalla coda e stampato: MSC 
-[2020/01/18 19:05:20] INFO: Numero di nodi contati: 1 
+[2020/01/18 19:21:43] INFO: an info msg 
+[2020/01/18 19:21:43] INFO: Avvio procedura di parsing 
+[2020/01/18 19:21:43] INFO: Parsing completato 
+[2020/01/18 19:21:43] INFO: Inizio procedura BFS 
+[2020/01/18 19:21:43] INFO: Creazione mappa [GraphNode, Indice] 
+[2020/01/18 19:21:43] INFO: Creazione mappa completata 
+[2020/01/18 19:21:43] INFO: Elemento di partenza visitato ed inserito nella coda 
+[2020/01/18 19:21:43] INFO: Elemento uscito dalla coda e stampato: start 
+[2020/01/18 19:21:43] INFO: Numero di nodi contati: 4 
+[2020/01/18 19:21:43] INFO: nodo next MSA 
+[2020/01/18 19:21:43] INFO: Var counter = 2 
+[2020/01/18 19:21:43] INFO: var nfr = 0 
+[2020/01/18 19:21:43] INFO: Ho visitato l'elemento MSA 
+[2020/01/18 19:21:43] INFO: Ho inserito nella coda MSA 
+[2020/01/18 19:21:43] INFO: nodo next MSB 
+[2020/01/18 19:21:43] INFO: Var counter = 1 
+[2020/01/18 19:21:43] INFO: var nfr = 1 
+[2020/01/18 19:21:43] INFO: Ho visitato l'elemento MSB 
+[2020/01/18 19:21:43] INFO: Ho inserito nella coda MSB 
+[2020/01/18 19:21:43] INFO: Elemento uscito dalla coda e stampato: MSA 
+[2020/01/18 19:21:43] INFO: Numero di nodi contati: 3 
+[2020/01/18 19:21:43] INFO: nodo next MSC 
+[2020/01/18 19:21:43] INFO: Var counter = 1 
+[2020/01/18 19:21:43] INFO: var nfr = 0 
+[2020/01/18 19:21:43] INFO: Ho visitato l'elemento MSC 
+[2020/01/18 19:21:43] INFO: Ho inserito nella coda MSC 
+[2020/01/18 19:21:43] INFO: Elemento uscito dalla coda e stampato: MSB 
+[2020/01/18 19:21:43] INFO: Numero di nodi contati: 2 
+[2020/01/18 19:21:43] INFO: nodo next MSC 
+[2020/01/18 19:21:43] INFO: Var counter = 1 
+[2020/01/18 19:21:43] INFO: var nfr = 0 
+[2020/01/18 19:21:43] INFO: Elemento uscito dalla coda e stampato: MSC 
+[2020/01/18 19:21:43] INFO: Numero di nodi contati: 1 
