@@ -1,11 +1,16 @@
 digraph G{
-   // start->risorsa;
-    start->a;
-    start->b;
-    start->c;
-    a->e;
-    a->d;
-    b->d;
-    c->f;
-    f->e;
+    //start->a;
+    //start->b;
+    //start->c;
+    //a->e;
+    //a->d;
+    //b->d;
+    //c->f;
+    //f->e;
+
+    start->MSA;
+    start->MSB;
+    MSB->MSC;
+    MSA->MSC;
+    //MSA->MSC;
 }

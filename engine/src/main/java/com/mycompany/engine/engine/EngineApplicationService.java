@@ -7,21 +7,40 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.paypal.digraph.parser.GraphNode;
 
 @Service
 public class EngineApplicationService {
-	
+
+	@Autowired
+	private MSAEntityProxy MSAproxy;
+
+	@Autowired
+	private MSBEntityProxy MSBproxy;
+
+	@Autowired
+	private MSCEntityProxy MSCproxy;
+
 	List<GraphNode> workflow;
 	GraphManager gm;
 	private static final Logger LOGGER = Logger.getLogger(EngineApplication.class.getSimpleName());
 	private List<CompletableFuture> tasks;
-	private Map<String, CompletableFuture<String>> taskMap = new HashMap<>();
+	private Map<String, CompletableFuture<MSBean>> taskMap = new HashMap<>();
+
+	private Map<String, EntityProxy> proxyMap = new HashMap<>();
+
+	void initializeProxyMap() {
+		proxyMap.put("MSA", MSAproxy);
+		proxyMap.put("MSB", MSBproxy);
+		proxyMap.put("MSC", MSCproxy);
+	}
 
 	void initializeGraphManager() {
 		gm = new GraphManager();
@@ -41,10 +60,9 @@ public class EngineApplicationService {
 			e.printStackTrace();
 		}
 	}
-	
-	
+
 	List<String> print() {
-		
+
 		initializeGraphManager();
 		List<String> workflowString = new ArrayList<String>();
 		for (GraphNode node : workflow) {
@@ -63,12 +81,26 @@ public class EngineApplicationService {
 		return microservice;
 	}
 
+	void function(GraphNode microservice, String risultato, CompletableFuture<MSBean> task) {
+		proxyMap.get(microservice.getId()).run();
+		try {
+			risultato = risultato + task.get().getName();
+		} catch (InterruptedException | ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	String run() {
 		initializeGraphManager();
+		initializeProxyMap();
+
+		String risultato = "";
+
 		for (GraphNode microservice : workflow) {
-			
+
 			int incomingNodes = gm.getIncomingNodesFromNode(microservice).size();
-			
+
 			if (incomingNodes > 1) {
 				// CASO IN CUI CI SONO PIU MICROSERVIZI DA ATTENDERE
 				/***********************************************/
@@ -78,41 +110,56 @@ public class EngineApplicationService {
 				}
 				printLog(microservice.getId() + " " + "ATTENDE" + " " + string);
 				/***********************************************/
-				
-				
-				CompletableFuture[] prevTasks = new CompletableFuture[incomingNodes];  	//array dei task precedenti a microservice
+
+				CompletableFuture[] prevTasks = new CompletableFuture[incomingNodes]; // array dei task precedenti a
+																						// microservice
 				for (int i = 0; i < incomingNodes; i++) {
 					prevTasks[i] = taskMap.get(gm.getIncomingNodesFromNode(microservice).get(i).getId());
 				}
 				CompletableFuture.allOf(prevTasks).join();
-				CompletableFuture<String> task = CompletableFuture.supplyAsync(() -> printLog(microservice.getId()));
+				CompletableFuture<MSBean> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
 				taskMap.put(microservice.getId(), task);
-				
-				
-				
-				
+
+				try {
+					risultato = risultato + task.get().getName();
+				} catch (InterruptedException | ExecutionException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
 			} else if (incomingNodes == 1) {
 				// CASO IN CUI C'E' UN SOLO MICROSERVIZIO PRECEDERNTE
 				GraphNode prev = gm.getIncomingNodesFromNode(microservice).get(0);
-				
+
 				if (prev.getId().equals("start")) {
 					// SE E' START NON ATTENDERE NESSUNO
-					printLog(microservice.getId() + " " + "NON ATTENDE NESSUNO");	
-					
-					CompletableFuture<String> task = CompletableFuture.supplyAsync(() -> printLog(microservice.getId()));
+					printLog(microservice.getId() + " " + "NON ATTENDE NESSUNO");
+
+					CompletableFuture<MSBean> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
 					taskMap.put(microservice.getId(), task);
+					try {
+						risultato = risultato + task.get().getName();
+					} catch (InterruptedException | ExecutionException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 				}
 				else {
 					// SE NON E' START, ATTENDI QUELLO PRECEDENTE
 					printLog(microservice.getId() + " " + "ATTENDE " + prev.getId());
-					
-					CompletableFuture<String> prevTask = taskMap.get(prev.getId());
-					CompletableFuture<String> task = prevTask.thenApply(result -> printLog(microservice.getId()));
+					CompletableFuture<MSBean> prevTask = taskMap.get(prev.getId());
+					CompletableFuture<MSBean> task = prevTask.thenApply(result -> proxyMap.get(microservice.getId()).run());
 					taskMap.put(microservice.getId(), task);
+					try {
+						risultato = risultato + task.get().getName();
+					} catch (InterruptedException | ExecutionException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 				}
 			}
 		}
-		return "FINISH";
+		return risultato;
 	}
 
 }

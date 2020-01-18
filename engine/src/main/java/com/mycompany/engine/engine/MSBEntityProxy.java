@@ -5,10 +5,10 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
-@FeignClient(name="MSA")
-@RibbonClient(name="MSA")
-public interface MSAEntityProxy extends EntityProxy {
-	@GetMapping("/MSA")
+@FeignClient(name="MSB")
+@RibbonClient(name="MSB")
+public interface MSBEntityProxy extends EntityProxy {
+	@GetMapping("/MSB")
 	public MSBean run();
 }
 

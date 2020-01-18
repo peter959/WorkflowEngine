@@ -1,16 +1,16 @@
-package com.mycompany.MSA.MSA;
+package com.mycompany.MSB.MSB;
  
 //import javax.persistence.Entity;
 
 //@Entity
-public class MSAEntity { 
+public class MSBEntity { 
   private String name;
 	static public String risultato = "";
 	
-	public MSAEntity() {};
+	public MSBEntity() {};
 	
 	
-	public MSAEntity(String name) {
+	public MSBEntity(String name) {
 		this.name  = name;
 	};
 

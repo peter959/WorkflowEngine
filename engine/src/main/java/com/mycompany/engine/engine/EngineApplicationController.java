@@ -17,7 +17,7 @@ public class EngineApplicationController {
 	
 	@RequestMapping("/test")
 	String test() {
-		MSABean response = proxy.run();
+		MSBean response = proxy.run();
 		return response.getName();
 	}
 	

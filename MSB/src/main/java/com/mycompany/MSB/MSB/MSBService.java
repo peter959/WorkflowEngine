@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MSBService {
-	String returnName() {
-		return "MSB";
+	MSBEntity returnEntity() {
+		return new MSBEntity("MSB");
 	}
 }

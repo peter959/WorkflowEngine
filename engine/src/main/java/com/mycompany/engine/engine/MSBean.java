@@ -4,15 +4,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class MSABean {
+public class MSBean {
 	private String name;
+	static public String risultato = "";
 	
-	public MSABean() {};
+	public MSBean() {};
 	
 	
-	public MSABean(String name) {
+	public MSBean(String name) {
 		this.name  = name;
 	};
+
 	
 	/*@Bean
 	public void setName(String name) {
@@ -23,5 +25,15 @@ public class MSABean {
 	public String getName() {
 		return this.name;
 	}
+
+	@Bean
+	static public String getRisultato() {
+		return risultato;
+	}
+
+	// @Bean
+	// static public void setRisultato(String newRisultato) {
+	// 	risultato = risultato + newRisultato;
+	// }
 
 }
