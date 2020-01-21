@@ -47,6 +47,13 @@
 			</exclusions>
 		</dependency>
 
+		<!-- Firebase -->
+		<dependency>
+  			<groupId>com.google.firebase</groupId>
+  			<artifactId>firebase-admin</artifactId>
+  			<version>6.11.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>

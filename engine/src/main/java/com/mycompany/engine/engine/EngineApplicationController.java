@@ -16,10 +16,12 @@ public class EngineApplicationController {
 	private MSAEntityProxy proxy;
 	
 	@RequestMapping("/test")
-	String test() {
-		MSBean response = proxy.run();
-		return response.getName();
+	void test() {
+		/*MSBean response = proxy.run();
+		return response.getName();*/
+		EngineApplicationService.initFirebase();
 	}
+
 	
 	@RequestMapping("/BFS-print")
 	List<String> print() {
