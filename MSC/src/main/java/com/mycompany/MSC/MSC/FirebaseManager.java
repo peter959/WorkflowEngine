@@ -44,5 +44,45 @@ public class FirebaseManager {
         data.put("result", result);
         
 		ref.setValueAsync(data);
-    }
+	}
+	
+	void collapseData(String path, String path2, String destinationPath) {
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+		DatabaseReference ref = database.getReference(path);
+		DatabaseReference ref2 = database.getReference(path2);
+		
+		ref.addValueEventListener(new ValueEventListener() {
+			@Override
+			public void onDataChange(DataSnapshot dataSnapshot) {
+			  String data = dataSnapshot.getValue(String.class);
+			  System.out.println(data);
+
+			  ref2.addValueEventListener(new ValueEventListener() {
+				@Override
+				public void onDataChange(DataSnapshot dataSnapshot) {
+				  String data2 = dataSnapshot.getValue(String.class);
+				  System.out.println(data + data2);
+				  insertResult(destinationPath, data + data2);
+				}
+			  
+				@Override
+				public void onCancelled(DatabaseError databaseError) {
+				  System.out.println("The read failed: " + databaseError.getCode());
+				}
+			  });
+			}
+			@Override
+			public void onCancelled(DatabaseError databaseError) {
+			  System.out.println("The read failed: " + databaseError.getCode());
+			}
+
+			
+		  });
+	}
+
+	
+
+	
+	
+	
 }
