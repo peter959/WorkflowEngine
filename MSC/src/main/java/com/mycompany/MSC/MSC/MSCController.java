@@ -11,7 +11,7 @@ public class MSCController {
 
 	@RequestMapping("/MSC")
 	MSCEntity run() {
-		MSCEntity mscEntity = mscService.returnEntity();
-		return mscEntity;
+		mscService.execute();
+		return mscService.returnEntity();
 	}
 }

@@ -4,8 +4,8 @@ package com.mycompany.MSA.MSA;
 
 //@Entity
 public class MSAEntity { 
-  private String name;
-	static public String risultato = "";
+private String name;
+final static private String risultato = "Topolino";
 	
 	public MSAEntity() {};
 	
@@ -15,7 +15,7 @@ public class MSAEntity {
 	};
 
 	
-	/*@Bean
+	/*
 	public void setName(String name) {
 		this.name  = name;
 	}*/
@@ -26,10 +26,6 @@ public class MSAEntity {
 
 	static public String getRisultato() {
 		return risultato;
-	}
-
-	static public void setRisultato(String newRisultato) {
-		risultato = risultato + newRisultato;
 	}
 
 }

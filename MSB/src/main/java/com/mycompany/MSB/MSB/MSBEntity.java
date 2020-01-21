@@ -5,7 +5,7 @@ package com.mycompany.MSB.MSB;
 //@Entity
 public class MSBEntity { 
   private String name;
-	static public String risultato = "";
+  final static private String risultato = "Pluto";
 	
 	public MSBEntity() {};
 	
@@ -15,7 +15,7 @@ public class MSBEntity {
 	};
 
 	
-	/*@Bean
+	/*
 	public void setName(String name) {
 		this.name  = name;
 	}*/
@@ -28,8 +28,5 @@ public class MSBEntity {
 		return risultato;
 	}
 
-	static public void setRisultato(String newRisultato) {
-		risultato = risultato + newRisultato;
-	}
 
 }

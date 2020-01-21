@@ -4,9 +4,8 @@ package com.mycompany.MSC.MSC;
 
 //@Entity
 public class MSCEntity { 
-  private String name;
-	static public String risultato = "";
-	
+	private String name;
+
 	public MSCEntity() {};
 	
 	
@@ -22,14 +21,6 @@ public class MSCEntity {
 	
 	public String getName() {
 		return this.name;
-	}
-
-	static public String getRisultato() {
-		return risultato;
-	}
-
-	static public void setRisultato(String newRisultato) {
-		risultato = risultato + newRisultato;
 	}
 
 }

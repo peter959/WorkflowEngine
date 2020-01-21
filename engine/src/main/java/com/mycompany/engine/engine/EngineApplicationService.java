@@ -29,35 +29,6 @@ import java.io.IOException;
 @Service
 public class EngineApplicationService {
 
-	void initFirebase() {
-		FileInputStream serviceAccount;
-		try {
-			serviceAccount = new FileInputStream(
-				"/Users/pietrovassallo/Documents/GitHub/IvaSpringboot/workflow-engine-db-firebase-adminsdk-1t320-cf74df9b92.json");
-			FirebaseOptions options;
-		
-			options = new FirebaseOptions.Builder()
-				.setCredentials(GoogleCredentials.fromStream(serviceAccount))
-				.setDatabaseUrl("https://workflow-engine-db.firebaseio.com/")
-				.build();
-
-			FirebaseApp.initializeApp(options);
-
-		}catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		final FirebaseDatabase database = FirebaseDatabase.getInstance();
-		DatabaseReference ref = database.getReference("test/giovanni");
-		ref.child("users");
-		Map<String, MSBean> users = new HashMap<>();
-		users.put("asda", new MSBean("MSA"));
-		users.put("sesso", new MSBean("MSB"));
-
-		ref.setValueAsync(users); 
-	}
-
 	@Autowired
 	private MSAEntityProxy MSAproxy;
 
@@ -70,7 +41,7 @@ public class EngineApplicationService {
 	List<GraphNode> workflow;
 	GraphManager gm;
 	private static final Logger LOGGER = Logger.getLogger(EngineApplication.class.getSimpleName());
-	private List<CompletableFuture> tasks;
+//	private List<CompletableFuture> tasks;
 	private Map<String, CompletableFuture<MSBean>> taskMap = new HashMap<>();
 
 	private Map<String, EntityProxy> proxyMap = new HashMap<>();
@@ -84,7 +55,7 @@ public class EngineApplicationService {
 	void initializeGraphManager() {
 		gm = new GraphManager();
 		workflow = gm.BFS();
-		tasks = new ArrayList<CompletableFuture>();
+		//tasks = new ArrayList<CompletableFuture>();
 
 		Properties prop = System.getProperties();
 		prop.setProperty("java.util.logging.config.file", "src/main/resources/LOG/loggingEngine.properties");
@@ -130,11 +101,9 @@ public class EngineApplicationService {
 		}
 	}
 
-	String run() {
+	void run() {
 		initializeGraphManager();
 		initializeProxyMap();
-
-		String risultato = "";
 
 		for (GraphNode microservice : workflow) {
 
@@ -159,13 +128,6 @@ public class EngineApplicationService {
 				CompletableFuture<MSBean> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
 				taskMap.put(microservice.getId(), task);
 
-				try {
-					risultato = risultato + task.get().getName();
-				} catch (InterruptedException | ExecutionException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-
 			} else if (incomingNodes == 1) {
 				// CASO IN CUI C'E' UN SOLO MICROSERVIZIO PRECEDERNTE
 				GraphNode prev = gm.getIncomingNodesFromNode(microservice).get(0);
@@ -176,12 +138,6 @@ public class EngineApplicationService {
 
 					CompletableFuture<MSBean> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
 					taskMap.put(microservice.getId(), task);
-					try {
-						risultato = risultato + task.get().getName();
-					} catch (InterruptedException | ExecutionException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
 				}
 				else {
 					// SE NON E' START, ATTENDI QUELLO PRECEDENTE
@@ -189,16 +145,9 @@ public class EngineApplicationService {
 					CompletableFuture<MSBean> prevTask = taskMap.get(prev.getId());
 					CompletableFuture<MSBean> task = prevTask.thenApply(result -> proxyMap.get(microservice.getId()).run());
 					taskMap.put(microservice.getId(), task);
-					try {
-						risultato = risultato + task.get().getName();
-					} catch (InterruptedException | ExecutionException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
 				}
 			}
 		}
-		return risultato;
 	}
 
 }

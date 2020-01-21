@@ -4,7 +4,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MSBService {
+	void execute() {
+		FirebaseManager fm = new FirebaseManager();
+		fm.insertResult("microservices/MSB", MSBEntity.getRisultato());
+	}
+
 	MSBEntity returnEntity() {
-		return new MSBEntity("MSB");
+		MSBEntity msb = new MSBEntity("MSB");
+		return msb;
 	}
 }

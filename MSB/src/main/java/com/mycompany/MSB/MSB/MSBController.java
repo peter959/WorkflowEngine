@@ -11,7 +11,7 @@ public class MSBController {
 
 	@RequestMapping("/MSB")
 	MSBEntity run() {
-		MSBEntity msbEntity = msbService.returnEntity();
-		return msbEntity;
+		msbService.execute();
+		return msbService.returnEntity();
 	}
 }

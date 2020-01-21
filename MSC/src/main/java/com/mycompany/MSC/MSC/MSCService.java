@@ -4,7 +4,14 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MSCService {
+	void execute() {
+		FirebaseManager fm = new FirebaseManager();
+		
+		fm.insertResult("microservices/MSC", ;
+	}
+
 	MSCEntity returnEntity() {
-		return new MSCEntity("MSC");
+		MSCEntity msc = new MSCEntity("MSC");
+		return msc;
 	}
 }

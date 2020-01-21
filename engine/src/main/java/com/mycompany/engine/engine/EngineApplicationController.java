@@ -19,7 +19,7 @@ public class EngineApplicationController {
 	void test() {
 		/*MSBean response = proxy.run();
 		return response.getName();*/
-		EngineApplicationService.initFirebase();
+		//EngineApplicationService.initFirebase();
 	}
 
 	
@@ -29,8 +29,8 @@ public class EngineApplicationController {
 	}
 
 	@RequestMapping("/run")
-	String run() {
-		return EngineApplicationService.run();
+	void run() {
+		EngineApplicationService.run();
 	}
 	
 
