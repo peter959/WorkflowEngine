@@ -9,6 +9,15 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+class ClassData {
+	public String data;
+
+	public ClassData(String data) {
+		this.data = data;
+	}
+
+}
+
 public class FirebaseManager {
     
     FirebaseManager () {
@@ -27,7 +36,11 @@ public class FirebaseManager {
 				.setDatabaseUrl("https://workflow-engine-db.firebaseio.com/")
 				.build();
 
-			FirebaseApp.initializeApp(options);
+				if (FirebaseApp.getApps().isEmpty()) {
+					FirebaseApp.initializeApp(options);
+				}
+				
+				//FirebaseApp.initializeApp(options);
 
 		}catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -46,7 +59,7 @@ public class FirebaseManager {
 		ref.setValueAsync(data);
 	}
 	
-	void collapseData(String path, String path2, String destinationPath) {
+	void getAndUnion(String path, String path2, String destinationPath) {
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
 		DatabaseReference ref = database.getReference(path);
 		DatabaseReference ref2 = database.getReference(path2);
@@ -54,15 +67,16 @@ public class FirebaseManager {
 		ref.addValueEventListener(new ValueEventListener() {
 			@Override
 			public void onDataChange(DataSnapshot dataSnapshot) {
-			  String data = dataSnapshot.getValue(String.class);
-			  System.out.println(data);
+			  String data1 = dataSnapshot.getValue(String.class);
+			  System.out.println(data1);
 
 			  ref2.addValueEventListener(new ValueEventListener() {
 				@Override
 				public void onDataChange(DataSnapshot dataSnapshot) {
-				  String data2 = dataSnapshot.getValue(String.class);
-				  System.out.println(data + data2);
-				  insertResult(destinationPath, data + data2);
+					String data2 = dataSnapshot.getValue(String.class);
+					System.out.println(data2);
+				  System.out.println(data1 + data2);
+				  insertResult(destinationPath, data1 + data2);
 				}
 			  
 				@Override
@@ -79,6 +93,7 @@ public class FirebaseManager {
 			
 		  });
 	}
+
 
 	
 

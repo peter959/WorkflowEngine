@@ -13,12 +13,7 @@ public class MSCEntity {
 		this.name  = name;
 	};
 
-	
-	/*@Bean
-	public void setName(String name) {
-		this.name  = name;
-	}*/
-	
+
 	public String getName() {
 		return this.name;
 	}

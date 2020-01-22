@@ -6,8 +6,7 @@ import org.springframework.stereotype.Service;
 public class MSCService {
 	void execute() {
 		FirebaseManager fm = new FirebaseManager();
-		
-		fm.insertResult("microservices/MSC", ;
+		fm.getAndUnion("microservices/MSA/result", "microservices/MSB/result", "microservices/MSC");
 	}
 
 	MSCEntity returnEntity() {

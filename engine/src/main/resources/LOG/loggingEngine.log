@@ -1,14 +1,14 @@
-[2020/01/18 19:21:43] INFO: MSA NON ATTENDE NESSUNO 
-[2020/01/18 19:21:43] INFO: MSB NON ATTENDE NESSUNO 
-[2020/01/18 19:21:43] INFO: MSC ATTENDE  MSA MSB 
-[2020/01/18 19:22:49] INFO: Pausing ProtocolHandler ["http-nio-8100"] 
-[2020/01/18 19:22:49] INFO: Stopping service [Tomcat] 
-[2020/01/18 19:22:49] INFO: Destroying Spring FrameworkServlet 'dispatcherServlet' 
-[2020/01/18 19:22:50] INFO: Stopping ProtocolHandler ["http-nio-8100"] 
-[2020/01/18 19:22:50] INFO: Destroying ProtocolHandler ["http-nio-8100"] 
-[2020/01/18 19:22:51] WARNING: The MBean registry cannot be disabled because it has already been initialised 
-[2020/01/18 19:22:51] INFO: Initializing ProtocolHandler ["http-nio-8100"] 
-[2020/01/18 19:22:51] INFO: Starting service [Tomcat] 
-[2020/01/18 19:22:51] INFO: Starting Servlet engine: [Apache Tomcat/9.0.29] 
-[2020/01/18 19:22:51] INFO: Initializing Spring embedded WebApplicationContext 
-[2020/01/18 19:22:52] INFO: Starting ProtocolHandler ["http-nio-8100"] 
+[2020/01/22 18:08:25] INFO: MSA NON ATTENDE NESSUNO 
+[2020/01/22 18:08:25] INFO: MSB NON ATTENDE NESSUNO 
+[2020/01/22 18:08:25] INFO: MSC ATTENDE  MSA MSB 
+[2020/01/22 18:08:30] INFO: Pausing ProtocolHandler ["http-nio-8100"] 
+[2020/01/22 18:08:30] INFO: Stopping service [Tomcat] 
+[2020/01/22 18:08:30] INFO: Destroying Spring FrameworkServlet 'dispatcherServlet' 
+[2020/01/22 18:08:30] INFO: Stopping ProtocolHandler ["http-nio-8100"] 
+[2020/01/22 18:08:30] INFO: Destroying ProtocolHandler ["http-nio-8100"] 
+[2020/01/22 18:08:30] WARNING: The MBean registry cannot be disabled because it has already been initialised 
+[2020/01/22 18:08:30] INFO: Initializing ProtocolHandler ["http-nio-8100"] 
+[2020/01/22 18:08:30] INFO: Starting service [Tomcat] 
+[2020/01/22 18:08:30] INFO: Starting Servlet engine: [Apache Tomcat/9.0.29] 
+[2020/01/22 18:08:30] INFO: Initializing Spring embedded WebApplicationContext 
+[2020/01/22 18:08:30] INFO: Starting ProtocolHandler ["http-nio-8100"] 

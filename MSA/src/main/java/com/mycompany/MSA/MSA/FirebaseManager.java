@@ -27,7 +27,9 @@ public class FirebaseManager {
 				.setDatabaseUrl("https://workflow-engine-db.firebaseio.com/")
 				.build();
 
-			FirebaseApp.initializeApp(options);
+				if (FirebaseApp.getApps().isEmpty()) {
+					FirebaseApp.initializeApp(options);
+				}
 
 		}catch (IOException e) {
 			// TODO Auto-generated catch block
