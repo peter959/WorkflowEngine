@@ -16,15 +16,6 @@ import org.springframework.stereotype.Service;
 
 import com.paypal.digraph.parser.GraphNode;
 
-import com.google.auth.oauth2.GoogleCredentials;
-import com.google.firebase.*;
-import com.google.firebase.database.*;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-
 
 @Service
 public class EngineApplicationService {
@@ -41,7 +32,6 @@ public class EngineApplicationService {
 	List<GraphNode> workflow;
 	GraphManager gm;
 	private static final Logger LOGGER = Logger.getLogger(EngineApplication.class.getSimpleName());
-//	private List<CompletableFuture> tasks;
 	private Map<String, CompletableFuture<MSBean>> taskMap = new HashMap<>();
 
 	private Map<String, EntityProxy> proxyMap = new HashMap<>();
@@ -101,7 +91,7 @@ public class EngineApplicationService {
 		}
 	}
 
-	void run() {
+	public void run() {
 		initializeGraphManager();
 		initializeProxyMap();
 

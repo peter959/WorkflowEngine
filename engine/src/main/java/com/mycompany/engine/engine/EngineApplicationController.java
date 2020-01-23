@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 public class EngineApplicationController {
 	@Autowired
-	EngineApplicationService EngineApplicationService;
+	EngineApplicationService engineApplicationService;
 	
 	@Autowired
 	private MSAEntityProxy proxy;
@@ -19,18 +19,18 @@ public class EngineApplicationController {
 	void test() {
 		/*MSBean response = proxy.run();
 		return response.getName();*/
-		//EngineApplicationService.initFirebase();
+		//engineApplicationService.initFirebase();
 	}
 
 	
 	@RequestMapping("/BFS-print")
 	List<String> print() {
-		return EngineApplicationService.print();
+		return engineApplicationService.print();
 	}
 
 	@RequestMapping("/run")
 	void run() {
-		EngineApplicationService.run();
+		engineApplicationService.run();
 	}
 	
 
