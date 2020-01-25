@@ -23,12 +23,13 @@ public class GraphManager {
     static GraphParser parser;
     static Map<String, GraphNode> nodes;
     static Map<String, GraphEdge> edges;
+    private String path = "/workflow.dot";
     private static final Logger LOGGER = Logger.getLogger(GraphManager.class.getSimpleName());
 
     GraphManager () {
         Properties prop = System.getProperties();
         prop.setProperty("java.util.logging.config.file", "src/main/resources/LOG/logging.properties");
-
+        
         try {
             LogManager.getLogManager().readConfiguration();
         } catch (SecurityException e) {
@@ -38,20 +39,30 @@ public class GraphManager {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        LOGGER.info("an info msg");
-        initialize("/workflow.dot");
+        //initialize("/workflow.dot");
+        
+        try {
+            parser = new GraphParser(GraphManager.class.getResourceAsStream(path)) ;
+            System.out.println("PARSER");
+        } 
+        catch (Exception e) {
+            System.out.println(e.getCause());
+        }
+        nodes = parser.getNodes();
+        edges = parser.getEdges();
+        
         start = nodes.get("start");
     };
 
 
     // Preleva il grafo dal percorso passato ed effettua il parsing
     public static void getParsed(final String path) {
-        LOGGER.info("Avvio procedura di parsing");
+        //LOGGER.info("Avvio procedura di parsing");
         try {
-            // InputStream stream = App.class.getResourceAsStream(path);
             parser = new GraphParser(GraphManager.class.getResourceAsStream(path)) ;
+            System.out.println("PARSER");
         } 
-        catch (GraphParserException e) {
+        catch (Exception e) {
             if(e.getCause().toString().contains("java.lang.NullPointerException")){
                 LOGGER.severe("--- Error: file at " + path + " not found");
                 System.out.println("--- Error: file at " + path + " not found");
@@ -65,22 +76,19 @@ public class GraphManager {
                 System.out.println(e.getCause());
             }
             System.exit(1);
+            System.out.println(e.getCause());
         }
         finally {
-            LOGGER.info("Parsing completato");
+            //LOGGER.info("Parsing completato");
         }
-        
+    
     }
 
     // Inizializzazione dei Nodi e Edge in modo da renderli disponibili altrove
     public static void initialize(final String path) {
-        //LOGGER.info("Avvio procedura di inizializzazione");
         getParsed(path);
-        //LOGGER.info("Ottenimento di nodi di inizializzazione");
         nodes = parser.getNodes();
-        //LOGGER.info("Ottenimento di edges di inizializzazione");
         edges = parser.getEdges();
-        //LOGGER.info("Inizializzazione completata");
     }
 
     // Ritorna una lista di NODI USCENTI da un NODO in input
@@ -137,28 +145,28 @@ public class GraphManager {
 
     public List<GraphNode> BFS(/*GraphNode s*/) {
         GraphNode s = start;
-        LOGGER.info("Inizio procedura BFS");
+        //LOGGER.info("Inizio procedura BFS");
 
         List<GraphNode> result = new ArrayList<GraphNode>();
 
         boolean visited[] = new boolean[nodes.size()];
-
+    
         // associa ad ogni nodo un indice, servirà per controllare se i nodi sono stati
         // visitati
-        LOGGER.info("Creazione mappa [GraphNode, Indice]");
+        //LOGGER.info("Creazione mappa [GraphNode, Indice]");
         HashMap<GraphNode, Integer> map = new HashMap<GraphNode, Integer>();
         int j = 0;
         for (final GraphNode node : nodes.values()) {
             map.put(node, j);
             j++;
         }
-        LOGGER.info("Creazione mappa completata");
+        //LOGGER.info("Creazione mappa completata");
 
         // Create a queue for BFS
         LinkedList<GraphNode> queue = new LinkedList<GraphNode>();
 
         // Mark the current node as visited and enqueue it
-        LOGGER.info("Elemento di partenza visitato ed inserito nella coda");
+        //LOGGER.info("Elemento di partenza visitato ed inserito nella coda");
         visited[map.get(s)] = true;
         queue.add(s);
         int nNodes = nodes.size();
@@ -168,8 +176,8 @@ public class GraphManager {
                 break;
             // Dequeue a vertex from queue and print it
             s = queue.poll();
-            LOGGER.info("Elemento uscito dalla coda e stampato: " + s.getId());
-            LOGGER.info("Numero di nodi contati: " + nNodes);
+            //LOGGER.info("Elemento uscito dalla coda e stampato: " + s.getId());
+            //LOGGER.info("Numero di nodi contati: " + nNodes);
             System.out.println(s.getId() + " ");
             result.add(s);
 
@@ -180,9 +188,9 @@ public class GraphManager {
             int nfr = 0; // numero figli eliminati
             while (counter > 0) {
                 GraphNode n = i.next();
-                LOGGER.info("nodo next " + n.getId());
-                LOGGER.info("Var counter = " + counter);
-                LOGGER.info("var nfr = " + nfr);
+                //LOGGER.info("nodo next " + n.getId());
+                //LOGGER.info("Var counter = " + counter);
+                //LOGGER.info("var nfr = " + nfr);
                 List<GraphNode> inNodes = getIncomingNodesFromNode(n);
                 boolean isTheRightNode = true; // indica se il nodo ha tutti nodi entranti visitati
                 for (GraphNode x : inNodes) {
@@ -201,8 +209,8 @@ public class GraphManager {
                     counter = getOutcomingNodesFromNode(s).size() - nfr; // aggiorna il contatore dei figli con il
                                                                          // numero corretto
                     visited[map.get(n)] = true;
-                    LOGGER.info("Ho visitato l'elemento " + n.getId());
-                    LOGGER.info("Ho inserito nella coda " + n.getId());
+                    //LOGGER.info("Ho visitato l'elemento " + n.getId());
+                    //LOGGER.info("Ho inserito nella coda " + n.getId());
                     if (!queue.contains(n))
                         queue.add(n); // evita doppioni
                 } else
@@ -210,7 +218,8 @@ public class GraphManager {
             }
             nNodes--;
         }
-        System.out.println();
+        
+
         return result;
     }
 
@@ -227,7 +236,7 @@ public class GraphManager {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        LOGGER.info("an info msg");
+        //LOGGER.info("an info msg");
         initialize("/workflow.dot");
         printNodes();
         printEdges();

@@ -15,19 +15,6 @@ public class EngineApplicationController {
 	@Autowired
 	private MSAEntityProxy proxy;
 	
-	@RequestMapping("/test")
-	void test() {
-		/*MSBean response = proxy.run();
-		return response.getName();*/
-		//engineApplicationService.initFirebase();
-	}
-
-	
-	@RequestMapping("/BFS-print")
-	List<String> print() {
-		return engineApplicationService.print();
-	}
-
 	@RequestMapping("/run")
 	void run() {
 		engineApplicationService.run();

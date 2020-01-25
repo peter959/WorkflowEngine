@@ -8,9 +8,11 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
+import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
+import org.bouncycastle.pqc.jcajce.provider.rainbow.SignatureSpi.withSha224;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,7 +33,7 @@ public class EngineApplicationService {
 
 	List<GraphNode> workflow;
 	GraphManager gm;
-	private static final Logger LOGGER = Logger.getLogger(EngineApplication.class.getSimpleName());
+	private static final Logger LOGGER = Logger.getLogger(EngineApplicationService.class.getSimpleName());
 	private Map<String, CompletableFuture<MSBean>> taskMap = new HashMap<>();
 
 	private Map<String, EntityProxy> proxyMap = new HashMap<>();
@@ -45,25 +47,31 @@ public class EngineApplicationService {
 	void initializeGraphManager() {
 		gm = new GraphManager();
 		workflow = gm.BFS();
-		//tasks = new ArrayList<CompletableFuture>();
 
-		Properties prop = System.getProperties();
-		prop.setProperty("java.util.logging.config.file", "src/main/resources/LOG/loggingEngine.properties");
+		// Properties prop = System.getProperties();
+		// prop.setProperty("java.util.logging.config.file", "src/main/resources/LOG/loggingEngine.properties");
+		
+		
+		// try {
+		// 	LogManager.getLogManager().readConfiguration();
+		// } catch (SecurityException e) {
+		// 	// TODO Auto-generated catch block
+		// 	e.printStackTrace();
+		// } catch (IOException e) {
+		// 	// TODO Auto-generated catch block
+		// 	e.printStackTrace();
+		// }
 
-		try {
-			LogManager.getLogManager().readConfiguration();
-		} catch (SecurityException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
-	List<String> print() {
-
+	public String ciao(){
 		initializeGraphManager();
+		System.out.println("ciao");
+		return "ciao";
+
+	}
+
+	private List<String> printBFS() {
 		List<String> workflowString = new ArrayList<String>();
 		for (GraphNode node : workflow) {
 			workflowString.add(node.getId());
@@ -71,29 +79,19 @@ public class EngineApplicationService {
 		return workflowString;
 	}
 
-	int printLog(GraphNode microservice) {
-		LOGGER.info("eseguo " + microservice.getId());
-		return 1;
-	}
-
-	String printLog(String microservice) {
-		LOGGER.info(microservice);
-		return microservice;
-	}
-
-	void function(GraphNode microservice, String risultato, CompletableFuture<MSBean> task) {
-		proxyMap.get(microservice.getId()).run();
-		try {
-			risultato = risultato + task.get().getName();
-		} catch (InterruptedException | ExecutionException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	private String getWaitingList(int incomingNodes, GraphNode microservice) {
+		String waitingList = "";
+		for (int i = 0; i < incomingNodes; i++) {
+			waitingList = waitingList + " " + gm.getIncomingNodesFromNode(microservice).get(i).getId();
 		}
+		return waitingList;
 	}
 
 	public void run() {
 		initializeGraphManager();
 		initializeProxyMap();
+
+		LOGGER.info("Workflow da eseguire: " + printBFS());
 
 		for (GraphNode microservice : workflow) {
 
@@ -101,21 +99,16 @@ public class EngineApplicationService {
 
 			if (incomingNodes > 1) {
 				// CASO IN CUI CI SONO PIU MICROSERVIZI DA ATTENDERE
-				/***********************************************/
-				String string = "";
-				for (int i = 0; i < incomingNodes; i++) {
-					string = string + " " + gm.getIncomingNodesFromNode(microservice).get(i).getId();
-				}
-				printLog(microservice.getId() + " " + "ATTENDE" + " " + string);
-				/***********************************************/
+				//LOGGER.info(microservice.getId() + " " + "ATTENDE" + " " + getWaitingList(incomingNodes, microservice) );
 
-				CompletableFuture[] prevTasks = new CompletableFuture[incomingNodes]; // array dei task precedenti a
-																						// microservice
+				CompletableFuture[] prevTasks = new CompletableFuture[incomingNodes]; // array dei task precedenti a microservice
+
 				for (int i = 0; i < incomingNodes; i++) {
 					prevTasks[i] = taskMap.get(gm.getIncomingNodesFromNode(microservice).get(i).getId());
 				}
 				CompletableFuture.allOf(prevTasks).join();
 				CompletableFuture<MSBean> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
+				//LOGGER.info(microservice.getId() + " LANCIATO");
 				taskMap.put(microservice.getId(), task);
 
 			} else if (incomingNodes == 1) {
@@ -124,16 +117,18 @@ public class EngineApplicationService {
 
 				if (prev.getId().equals("start")) {
 					// SE E' START NON ATTENDERE NESSUNO
-					printLog(microservice.getId() + " " + "NON ATTENDE NESSUNO");
+					//LOGGER.info(microservice.getId() + " " + "NON ATTENDE NESSUNO");
 
 					CompletableFuture<MSBean> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
+					//LOGGER.info(microservice.getId() + " LANCIATO");
 					taskMap.put(microservice.getId(), task);
 				}
 				else {
 					// SE NON E' START, ATTENDI QUELLO PRECEDENTE
-					printLog(microservice.getId() + " " + "ATTENDE " + prev.getId());
+					//LOGGER.info(microservice.getId() + " " + "ATTENDE " + prev.getId());
 					CompletableFuture<MSBean> prevTask = taskMap.get(prev.getId());
 					CompletableFuture<MSBean> task = prevTask.thenApply(result -> proxyMap.get(microservice.getId()).run());
+					//LOGGER.info(microservice.getId() + " LANCIATO");
 					taskMap.put(microservice.getId(), task);
 				}
 			}
