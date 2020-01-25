@@ -7,12 +7,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
-import java.util.logging.Level;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+// import java.util.logging.FileHandler;
+// import java.util.logging.Level;
+// import java.util.logging.LogManager;
+// import java.util.logging.Logger;
+// import java.util.logging.SimpleFormatter;
 
-import org.bouncycastle.pqc.jcajce.provider.rainbow.SignatureSpi.withSha224;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +35,9 @@ public class EngineApplicationService {
 
 	List<GraphNode> workflow;
 	GraphManager gm;
-	private static final Logger LOGGER = Logger.getLogger(EngineApplicationService.class.getSimpleName());
+	//Logger LOGGER = Logger.getLogger(EngineApplicationService.class.getSimpleName());
+	private static Logger LOGGER = LoggerFactory.getLogger(EngineApplicationService.class);
+ 
 	private Map<String, CompletableFuture<MSBean>> taskMap = new HashMap<>();
 
 	private Map<String, EntityProxy> proxyMap = new HashMap<>();
@@ -49,11 +53,10 @@ public class EngineApplicationService {
 		workflow = gm.BFS();
 
 		// Properties prop = System.getProperties();
-		// prop.setProperty("java.util.logging.config.file", "src/main/resources/LOG/loggingEngine.properties");
-		
+		// prop.setProperty("java.util.logging.config.file", "src/main/resources/LOG/logging.properties");
 		
 		// try {
-		// 	LogManager.getLogManager().readConfiguration();
+		//	LogManager.getLogManager().readConfiguration();
 		// } catch (SecurityException e) {
 		// 	// TODO Auto-generated catch block
 		// 	e.printStackTrace();
@@ -61,13 +64,6 @@ public class EngineApplicationService {
 		// 	// TODO Auto-generated catch block
 		// 	e.printStackTrace();
 		// }
-
-	}
-
-	public String ciao(){
-		initializeGraphManager();
-		System.out.println("ciao");
-		return "ciao";
 
 	}
 
@@ -91,7 +87,8 @@ public class EngineApplicationService {
 		initializeGraphManager();
 		initializeProxyMap();
 
-		LOGGER.info("Workflow da eseguire: " + printBFS());
+		LOGGER.warn("Workflow da eseguire: " + printBFS());
+		//LOGGER.log(Level.INFO, "logging: {0} ", "message1"); 
 
 		for (GraphNode microservice : workflow) {
 

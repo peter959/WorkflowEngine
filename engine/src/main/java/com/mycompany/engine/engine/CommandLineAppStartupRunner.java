@@ -7,11 +7,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class CommandLineAppStartupRunner implements CommandLineRunner {
     @Autowired
-    private EngineApplicationService myService;
+    private EngineApplicationService engineService;
 
     @Override
     public void run(String...args) throws Exception {
-        System.out.println("HEEEEEY");
-        myService.run();
+        engineService.run();
     }
 }
