@@ -19,7 +19,7 @@ public class FirebaseManager {
 		FileInputStream serviceAccount;
 		try {
 			serviceAccount = new FileInputStream(
-				"/Users/gioelecageggi/Documents/GitHub/IvaSpringboot/workflow-engine-db-firebase-adminsdk-1t320-cf74df9b92.json");
+				"src/main/resources/workflow-engine-db-firebase-adminsdk-1t320-cf74df9b92.json");
 			FirebaseOptions options;
 		
 			options = new FirebaseOptions.Builder()
