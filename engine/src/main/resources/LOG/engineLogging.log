@@ -1,0 +1,15 @@
+2020-01-27T16:40:42.310+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T16:40:45.805+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started EngineApplication in 4.414 seconds (JVM running for 5.744)
+2020-01-27T16:40:45.936+0100 com.mycompany.engine.engine.GraphManager.BFS(GraphManager.java:136) INFO Inizio procedura BFS
+2020-01-27T16:40:45.938+0100 com.mycompany.engine.engine.EngineApplicationService.run(EngineApplicationService.java:89) INFO Info level log message
+2020-01-27T16:40:45.938+0100 com.mycompany.engine.engine.EngineApplicationService.run(EngineApplicationService.java:91) ERROR HEREEEEE
+2020-01-27T16:41:29.047+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T16:41:30.279+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started EngineApplication in 1.545 seconds (JVM running for 50.222)
+2020-01-27T16:41:30.285+0100 com.mycompany.engine.engine.GraphManager.BFS(GraphManager.java:136) INFO Inizio procedura BFS
+2020-01-27T16:41:30.285+0100 com.mycompany.engine.engine.EngineApplicationService.run(EngineApplicationService.java:89) INFO Info level log message
+2020-01-27T16:41:30.286+0100 com.mycompany.engine.engine.EngineApplicationService.run(EngineApplicationService.java:91) ERROR HEREEEEE
+2020-01-27T16:43:24.710+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T16:43:25.478+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started EngineApplication in 0.896 seconds (JVM running for 165.421)
+2020-01-27T16:43:25.482+0100 com.mycompany.engine.engine.GraphManager.BFS(GraphManager.java:136) INFO Inizio procedura BFS
+2020-01-27T16:43:25.486+0100 com.mycompany.engine.engine.EngineApplicationService.run(EngineApplicationService.java:90) INFO Info level log message
+2020-01-27T16:43:25.486+0100 com.mycompany.engine.engine.EngineApplicationService.run(EngineApplicationService.java:92) ERROR HEREEEEE

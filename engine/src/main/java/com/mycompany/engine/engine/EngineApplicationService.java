@@ -13,8 +13,8 @@ import java.util.concurrent.CompletableFuture;
 // import java.util.logging.Logger;
 // import java.util.logging.SimpleFormatter;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,11 +35,8 @@ public class EngineApplicationService {
 
 	List<GraphNode> workflow;
 	GraphManager gm;
-	//Logger LOGGER = Logger.getLogger(EngineApplicationService.class.getSimpleName());
-	private static Logger LOGGER = LoggerFactory.getLogger(EngineApplicationService.class);
- 
+	private static final Logger LOGGER = LogManager.getLogger(EngineApplicationService.class);
 	private Map<String, CompletableFuture<MSBean>> taskMap = new HashMap<>();
-
 	private Map<String, EntityProxy> proxyMap = new HashMap<>();
 
 	void initializeProxyMap() {
@@ -87,8 +84,12 @@ public class EngineApplicationService {
 		initializeGraphManager();
 		initializeProxyMap();
 
-		LOGGER.warn("Workflow da eseguire: " + printBFS());
+		
+		//LOGGER.warn("Workflow da eseguire: " + printBFS());
 		//LOGGER.log(Level.INFO, "logging: {0} ", "message1"); 
+		LOGGER.info("Info level log message");
+        LOGGER.debug("Debug level log message");
+        LOGGER.error("HEREEEEE");
 
 		for (GraphNode microservice : workflow) {
 

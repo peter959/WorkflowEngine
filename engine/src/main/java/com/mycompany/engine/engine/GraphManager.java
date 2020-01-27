@@ -8,6 +8,10 @@ import java.util.Map;
 import com.paypal.digraph.parser.GraphEdge;
 import com.paypal.digraph.parser.GraphNode;
 import com.paypal.digraph.parser.GraphParser;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import info.bluefoot.scripts.util.circulariterator.CircularIterator;
 import info.bluefoot.scripts.util.circulariterator.CircularList;
 //import java.util.logging.*;
@@ -19,6 +23,8 @@ public class GraphManager {
     static Map<String, GraphEdge> edges;
     //private String path = "/workflow.dot";
     //private static final Logger LOGGER = Logger.getLogger(GraphManager.class.getSimpleName());
+    private static final Logger LOGGER = LogManager.getLogger(GraphManager.class);
+
 
     GraphManager () {
         // Properties prop = System.getProperties();
@@ -127,7 +133,7 @@ public class GraphManager {
 
     public List<GraphNode> BFS(/*GraphNode s*/) {
         GraphNode s = start;
-        ////LOGGER.info("Inizio procedura BFS");
+        LOGGER.info("Inizio procedura BFS");
 
         List<GraphNode> result = new ArrayList<GraphNode>();
 
@@ -160,7 +166,7 @@ public class GraphManager {
             s = queue.poll();
             ////LOGGER.info("Elemento uscito dalla coda e stampato: " + s.getId());
             ////LOGGER.info("Numero di nodi contati: " + nNodes);
-            System.out.println(s.getId() + " ");
+            //System.out.println(s.getId() + " ");
             result.add(s);
 
 
