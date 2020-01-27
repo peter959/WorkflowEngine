@@ -1,0 +1,42 @@
+2020-01-27T17:29:45.283+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:29:47.635+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 2.967 seconds (JVM running for 3.869)
+2020-01-27T17:30:10.552+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:30:12.879+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 2.945 seconds (JVM running for 3.851)
+2020-01-27T17:30:48.914+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:30:51.268+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 2.956 seconds (JVM running for 4.058)
+2020-01-27T17:32:28.814+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:32:34.120+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 6.133 seconds (JVM running for 7.341)
+2020-01-27T17:32:57.621+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:32:59.897+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 2.866 seconds (JVM running for 3.929)
+2020-01-27T17:34:15.592+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:34:16.356+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 0.954 seconds (JVM running for 80.391)
+2020-01-27T17:34:20.805+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:34:21.211+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 0.497 seconds (JVM running for 85.245)
+2020-01-27T17:34:43.304+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:34:43.941+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 0.754 seconds (JVM running for 107.977)
+2020-01-27T17:38:39.113+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:38:41.459+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 2.945 seconds (JVM running for 3.845)
+2020-01-27T17:38:54.813+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:38:55.261+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 0.549 seconds (JVM running for 17.649)
+2020-01-27T17:39:43.228+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:39:43.686+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 0.59 seconds (JVM running for 66.075)
+2020-01-27T17:40:39.666+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:40:40.177+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 0.606 seconds (JVM running for 122.568)
+2020-01-27T17:48:17.136+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:48:19.488+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 2.953 seconds (JVM running for 3.896)
+2020-01-27T17:54:25.656+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:54:28.037+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 2.988 seconds (JVM running for 3.917)
+2020-01-27T17:55:27.074+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:55:29.440+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 2.998 seconds (JVM running for 3.89)
+2020-01-27T17:56:05.013+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-27T17:56:05.112+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-27T17:58:05.978+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-27T17:58:06.628+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 0.97 seconds (JVM running for 161.082)
+2020-01-27T18:01:37.539+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-27T18:01:37.544+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-27T18:04:49.597+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-27T18:04:49.601+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-27T18:08:21.543+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-27T18:08:21.547+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-27T18:12:04.703+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-27T18:12:04.705+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO

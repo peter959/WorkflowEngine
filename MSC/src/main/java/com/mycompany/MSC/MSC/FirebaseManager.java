@@ -9,8 +9,12 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 class ClassData {
 	public String data;
+	
 
 	public ClassData(String data) {
 		this.data = data;
@@ -67,15 +71,16 @@ public class FirebaseManager {
 		ref.addValueEventListener(new ValueEventListener() {
 			@Override
 			public void onDataChange(DataSnapshot dataSnapshot) {
+			  final Logger LOGGER = LogManager.getLogger(MSCService.class);
 			  String data1 = dataSnapshot.getValue(String.class);
-			  System.out.println(data1);
+			  LOGGER.info(data1);
 
 			  ref2.addValueEventListener(new ValueEventListener() {
 				@Override
 				public void onDataChange(DataSnapshot dataSnapshot) {
 					String data2 = dataSnapshot.getValue(String.class);
-					System.out.println(data2);
-				  System.out.println(data1 + data2);
+					LOGGER.info(data2);
+					LOGGER.info(data1 + data2);
 				  insertResult(destinationPath, data1 + data2);
 				}
 			  
