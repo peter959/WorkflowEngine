@@ -11,11 +11,3 @@ public interface MSBEntityProxy extends EntityProxy {
 	@GetMapping("/MSB")
 	public MSBean run();
 }
-
-
-// @FeignClient(name="MSA")
-// @RibbonClient(name="MSA")
-// public interface MSAEntityProxy{
-// 	@GetMapping("/MSA")
-// 	public MSABean run();
-// }
