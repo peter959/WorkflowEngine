@@ -9,8 +9,13 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class FirebaseManager {
-    
+	
+	private static final Logger LOGGER = LogManager.getLogger(MSAController.class);
+
     FirebaseManager () {
         initFirebase();
     }
@@ -46,5 +51,7 @@ public class FirebaseManager {
         data.put("result", result);
         
 		ref.setValueAsync(data);
+
+		LOGGER.info(result + " inserito nel database");
     }
 }
