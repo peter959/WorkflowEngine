@@ -18,3 +18,31 @@
 2020-01-28T14:42:36.139+0100 com.mycompany.MSB.MSB.MSBController.run(MSBController.java:19) INFO in esecuzione...
 2020-01-28T14:42:36.141+0100 com.mycompany.MSB.MSB.FirebaseManager.insertResult(FirebaseManager.java:54) INFO Pluto inserito nel database
 2020-01-28T14:42:36.141+0100 com.mycompany.MSB.MSB.MSBService.execute(MSBService.java:15) INFO MSB ESEGUITO
+2020-01-28T14:44:51.833+0100 com.mycompany.MSB.MSB.MSBController.run(MSBController.java:19) INFO in esecuzione...
+2020-01-28T14:44:51.836+0100 com.mycompany.MSB.MSB.FirebaseManager.insertResult(FirebaseManager.java:54) INFO Pluto inserito nel database
+2020-01-28T14:44:51.836+0100 com.mycompany.MSB.MSB.MSBService.execute(MSBService.java:15) INFO MSB ESEGUITO
+2020-01-28T14:46:23.793+0100 com.mycompany.MSB.MSB.MSBController.run(MSBController.java:19) INFO in esecuzione...
+2020-01-28T14:46:23.795+0100 com.mycompany.MSB.MSB.FirebaseManager.insertResult(FirebaseManager.java:54) INFO Pluto inserito nel database
+2020-01-28T14:46:23.796+0100 com.mycompany.MSB.MSB.MSBService.execute(MSBService.java:15) INFO MSB ESEGUITO
+2020-01-28T17:10:25.580+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-28T17:10:30.098+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsbApplication in 5.541 seconds (JVM running for 6.888)
+2020-01-28T17:11:32.178+0100 com.mycompany.MSB.MSB.MSBController.run(MSBController.java:19) INFO in esecuzione...
+2020-01-28T17:11:32.296+0100 com.mycompany.MSB.MSB.FirebaseManager.insertResult(FirebaseManager.java:54) INFO Pluto inserito nel database
+2020-01-28T17:11:32.296+0100 com.mycompany.MSB.MSB.MSBService.execute(MSBService.java:15) INFO MSB ESEGUITO
+2020-01-28T17:26:17.981+0100 com.mycompany.MSB.MSB.MSBController.run(MSBController.java:19) INFO in esecuzione...
+2020-01-28T17:26:17.982+0100 com.mycompany.MSB.MSB.FirebaseManager.insertResult(FirebaseManager.java:54) INFO Pluto inserito nel database
+2020-01-28T17:26:17.982+0100 com.mycompany.MSB.MSB.MSBService.execute(MSBService.java:15) INFO MSB ESEGUITO
+2020-01-28T17:26:44.081+0100 com.mycompany.MSB.MSB.MSBController.run(MSBController.java:19) INFO in esecuzione...
+2020-01-28T17:26:44.083+0100 com.mycompany.MSB.MSB.FirebaseManager.insertResult(FirebaseManager.java:54) INFO Pluto inserito nel database
+2020-01-28T17:26:44.083+0100 com.mycompany.MSB.MSB.MSBService.execute(MSBService.java:15) INFO MSB ESEGUITO
+2020-01-28T17:28:07.918+0100 com.mycompany.MSB.MSB.MSBController.run(MSBController.java:19) INFO in esecuzione...
+2020-01-28T17:28:07.920+0100 com.mycompany.MSB.MSB.FirebaseManager.insertResult(FirebaseManager.java:54) INFO Pluto inserito nel database
+2020-01-28T17:28:07.920+0100 com.mycompany.MSB.MSB.MSBService.execute(MSBService.java:15) INFO MSB ESEGUITO
+2020-01-28T17:28:53.334+0100 com.mycompany.MSB.MSB.MSBController.run(MSBController.java:19) INFO in esecuzione...
+2020-01-28T17:28:53.335+0100 com.mycompany.MSB.MSB.FirebaseManager.insertResult(FirebaseManager.java:54) INFO Pluto inserito nel database
+2020-01-28T17:28:53.335+0100 com.mycompany.MSB.MSB.MSBService.execute(MSBService.java:15) INFO MSB ESEGUITO
+2020-01-29T14:41:20.302+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-29T14:41:22.780+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsbApplication in 3.191 seconds (JVM running for 4.128)
+2020-01-29T14:41:42.434+0100 com.mycompany.MSB.MSB.MSBController.run(MSBController.java:19) INFO in esecuzione...
+2020-01-29T14:41:42.538+0100 com.mycompany.MSB.MSB.FirebaseManager.insertResult(FirebaseManager.java:54) INFO Pluto inserito nel database
+2020-01-29T14:41:42.538+0100 com.mycompany.MSB.MSB.MSBService.execute(MSBService.java:15) INFO MSB ESEGUITO

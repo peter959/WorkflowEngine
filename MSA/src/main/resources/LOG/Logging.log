@@ -48,3 +48,31 @@
 2020-01-28T14:42:36.113+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
 2020-01-28T14:42:36.115+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
 2020-01-28T14:42:36.115+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-28T14:44:51.833+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-28T14:44:51.836+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
+2020-01-28T14:44:51.836+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-28T14:46:23.788+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-28T14:46:23.793+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
+2020-01-28T14:46:23.793+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-28T17:10:27.957+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-28T17:10:32.105+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 5.303 seconds (JVM running for 6.483)
+2020-01-28T17:11:32.178+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-28T17:11:32.295+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
+2020-01-28T17:11:32.296+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-28T17:26:17.954+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-28T17:26:17.956+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
+2020-01-28T17:26:17.956+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-28T17:26:44.081+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-28T17:26:44.083+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
+2020-01-28T17:26:44.083+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-28T17:28:07.891+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-28T17:28:07.893+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
+2020-01-28T17:28:07.893+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-28T17:28:53.299+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-28T17:28:53.300+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
+2020-01-28T17:28:53.301+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-29T14:41:14.305+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-29T14:41:16.843+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 3.136 seconds (JVM running for 4.032)
+2020-01-29T14:41:42.435+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-29T14:41:42.540+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
+2020-01-29T14:41:42.540+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO

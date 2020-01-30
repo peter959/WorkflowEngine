@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RibbonClient(name="MSB")
 public interface MSBEntityProxy extends EntityProxy {
 	@GetMapping("/MSB")
-	public MSBean run();
+	public MSResult run();
 }

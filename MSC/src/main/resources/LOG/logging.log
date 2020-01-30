@@ -21,3 +21,207 @@
 2020-01-28T14:42:36.174+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
 2020-01-28T14:42:36.174+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
 2020-01-28T14:42:36.175+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:44:06.807+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:44:06.810+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:44:06.810+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:44:06.810+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:44:06.810+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:44:06.810+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:44:14.321+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:44:14.321+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:44:14.321+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:44:14.322+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:44:14.322+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:44:14.322+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:44:14.322+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:44:14.323+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:44:51.886+0100 com.mycompany.MSC.MSC.MSCController.run(MSCController.java:20) INFO in esecuzione...
+2020-01-28T14:44:51.889+0100 com.mycompany.MSC.MSC.MSCService.execute(MSCService.java:15) INFO MSC ESEGUITO
+2020-01-28T14:44:51.889+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:44:51.890+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:44:51.890+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:44:52.799+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:44:52.799+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:44:52.800+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:44:52.800+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:44:52.800+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:44:52.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:44:52.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:44:52.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:44:52.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:44:52.802+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:44:52.894+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T14:44:52.894+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T14:44:52.894+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T14:44:52.894+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:44:52.894+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:44:52.895+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:44:52.895+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:44:52.895+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:44:52.896+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:45:20.557+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:45:20.557+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:45:20.558+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:45:20.558+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:45:20.558+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:45:20.558+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:45:20.559+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:45:20.559+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:45:20.559+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:45:24.514+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.515+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:45:24.515+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.515+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:45:24.515+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.515+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:45:24.516+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.516+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:45:24.516+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.517+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:45:24.517+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.517+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:45:24.517+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.517+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:45:24.518+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.518+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:45:24.518+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.519+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:45:24.519+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.519+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:45:24.519+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:45:24.520+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:46:23.858+0100 com.mycompany.MSC.MSC.MSCController.run(MSCController.java:20) INFO in esecuzione...
+2020-01-28T14:46:23.862+0100 com.mycompany.MSC.MSC.MSCService.execute(MSCService.java:15) INFO MSC ESEGUITO
+2020-01-28T14:46:23.862+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:46:23.862+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:46:23.862+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:46:24.717+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T14:46:24.718+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T14:46:24.718+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T14:46:24.718+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T14:46:24.719+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:46:24.719+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:46:24.720+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:46:24.720+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:46:24.720+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:46:24.720+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:46:24.721+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:46:24.721+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:46:24.798+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.798+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:46:24.799+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.799+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:46:24.799+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.799+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:46:24.800+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.800+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:46:24.800+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.800+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:46:24.800+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.800+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:46:24.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:46:24.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:46:24.802+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.802+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:46:24.802+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.802+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:46:24.802+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.803+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:46:24.803+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.803+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:46:24.803+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.804+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:46:24.804+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.804+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:46:24.804+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.805+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:46:24.805+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:46:24.805+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T14:57:48.126+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:57:48.127+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:57:48.127+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:57:48.127+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO null
+2020-01-28T14:57:48.127+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:57:48.128+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:57:48.128+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:57:48.128+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:57:48.128+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:57:48.129+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:57:48.129+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T14:57:48.129+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullPluto
+2020-01-28T14:57:52.796+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.797+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:57:52.798+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.799+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:57:52.799+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:57:52.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.801+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:57:52.802+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.802+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:57:52.802+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.802+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:57:52.803+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.803+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:57:52.803+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.803+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:57:52.803+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.804+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:57:52.804+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.804+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:57:52.804+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.804+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:57:52.805+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.805+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:57:52.805+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.805+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:57:52.805+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.806+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:57:52.806+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.806+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:57:52.806+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.806+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO Topolinonull
+2020-01-28T14:57:52.807+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.807+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:57:52.807+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.808+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:57:52.808+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.808+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T14:57:52.808+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO null
+2020-01-28T14:57:52.809+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO nullnull
+2020-01-28T17:10:33.443+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-28T17:10:35.771+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MscApplication in 2.951 seconds (JVM running for 3.931)
+2020-01-28T17:11:32.425+0100 com.mycompany.MSC.MSC.MSCController.run(MSCController.java:20) INFO in esecuzione...
+2020-01-28T17:11:32.500+0100 com.mycompany.MSC.MSC.MSCService.execute(MSCService.java:15) INFO MSC ESEGUITO
+2020-01-28T17:11:34.144+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T17:11:34.288+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T17:11:34.289+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T17:26:18.016+0100 com.mycompany.MSC.MSC.MSCController.run(MSCController.java:20) INFO in esecuzione...
+2020-01-28T17:26:18.018+0100 com.mycompany.MSC.MSC.MSCService.execute(MSCService.java:15) INFO MSC ESEGUITO
+2020-01-28T17:26:18.018+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T17:26:18.019+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T17:26:18.019+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T17:26:44.142+0100 com.mycompany.MSC.MSC.MSCController.run(MSCController.java:20) INFO in esecuzione...
+2020-01-28T17:26:44.144+0100 com.mycompany.MSC.MSC.MSCService.execute(MSCService.java:15) INFO MSC ESEGUITO
+2020-01-28T17:26:44.144+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T17:26:44.144+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T17:26:44.144+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T17:28:07.988+0100 com.mycompany.MSC.MSC.MSCController.run(MSCController.java:20) INFO in esecuzione...
+2020-01-28T17:28:07.989+0100 com.mycompany.MSC.MSC.MSCService.execute(MSCService.java:15) INFO MSC ESEGUITO
+2020-01-28T17:28:07.989+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T17:28:07.990+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T17:28:07.990+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-28T17:28:53.376+0100 com.mycompany.MSC.MSC.MSCController.run(MSCController.java:20) INFO in esecuzione...
+2020-01-28T17:28:53.378+0100 com.mycompany.MSC.MSC.MSCService.execute(MSCService.java:15) INFO MSC ESEGUITO
+2020-01-28T17:28:53.378+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-28T17:28:53.378+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-28T17:28:53.378+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-29T14:41:20.302+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-29T14:41:22.780+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MscApplication in 3.191 seconds (JVM running for 4.094)
+2020-01-29T14:41:42.683+0100 com.mycompany.MSC.MSC.MSCController.run(MSCController.java:20) INFO in esecuzione...
+2020-01-29T14:41:42.763+0100 com.mycompany.MSC.MSC.MSCService.execute(MSCService.java:15) INFO MSC ESEGUITO
+2020-01-29T14:41:44.465+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-29T14:41:44.628+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-29T14:41:44.628+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto

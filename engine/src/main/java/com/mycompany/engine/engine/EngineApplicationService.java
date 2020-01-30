@@ -28,7 +28,7 @@ public class EngineApplicationService {
 	List<GraphNode> workflow;
 	GraphManager gm;
 	private static final Logger LOGGER = LogManager.getLogger(EngineApplicationService.class);
-	private Map<String, CompletableFuture<MSBean>> taskMap = new HashMap<>();
+	private Map<String, CompletableFuture<MSResult>> taskMap = new HashMap<>();
 	private Map<String, EntityProxy> proxyMap = new HashMap<>();
 
 	void initializeProxyMap() {
@@ -50,10 +50,10 @@ public class EngineApplicationService {
 		return workflowString;
 	}
 
-	private String getWaitingList(int incomingNodes, GraphNode microservice) {
-		String waitingList = "";
-		for (int i = 0; i < incomingNodes; i++) {
-			waitingList = waitingList + " " + gm.getIncomingNodesFromNode(microservice).get(i).getId();
+	private List<String> getWaitingList(GraphNode microservice) {
+		List<String> waitingList = new ArrayList<String>();
+		for (int i = 0; i < gm.getIncomingNodesFromNode(microservice).size(); i++) {
+			waitingList.add(gm.getIncomingNodesFromNode(microservice).get(i).getId());
 		}
 		return waitingList;
 	}
@@ -69,7 +69,7 @@ public class EngineApplicationService {
 
 			if (incomingNodes > 1) {
 				// CASO IN CUI CI SONO PIU MICROSERVIZI DA ATTENDERE
-				LOGGER.info(microservice.getId() + " " + "ATTENDE" + " " + getWaitingList(incomingNodes, microservice) );
+				LOGGER.info(microservice.getId() + " " + "ATTENDE" + " " + getWaitingList(microservice) ); // incomingNodes può essere ottenuto in getWaitingList senza passarla
 
 				CompletableFuture[] prevTasks = new CompletableFuture[incomingNodes]; // array dei task precedenti a microservice
 
@@ -77,7 +77,7 @@ public class EngineApplicationService {
 					prevTasks[i] = taskMap.get(gm.getIncomingNodesFromNode(microservice).get(i).getId());
 				}
 				CompletableFuture.allOf(prevTasks).join();
-				CompletableFuture<MSBean> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
+				CompletableFuture<MSResult> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
 				LOGGER.info(microservice.getId() + " LANCIATO");
 				taskMap.put(microservice.getId(), task);
 
@@ -89,15 +89,15 @@ public class EngineApplicationService {
 					// SE E' START NON ATTENDERE NESSUNO
 					LOGGER.info(microservice.getId() + " " + "NON ATTENDE NESSUNO");
 
-					CompletableFuture<MSBean> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
+					CompletableFuture<MSResult> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
 					LOGGER.info(microservice.getId() + " LANCIATO");
 					taskMap.put(microservice.getId(), task);
 				}
 				else {
 					// SE NON E' START, ATTENDI QUELLO PRECEDENTE
 					LOGGER.info(microservice.getId() + " " + "ATTENDE " + prev.getId());
-					CompletableFuture<MSBean> prevTask = taskMap.get(prev.getId());
-					CompletableFuture<MSBean> task = prevTask.thenApply(result -> proxyMap.get(microservice.getId()).run());
+					CompletableFuture<MSResult> prevTask = taskMap.get(prev.getId());
+					CompletableFuture<MSResult> task = prevTask.thenApply(result -> proxyMap.get(microservice.getId()).run());
 					LOGGER.info(microservice.getId() + " LANCIATO");
 					taskMap.put(microservice.getId(), task);
 				}
