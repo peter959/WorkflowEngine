@@ -15,9 +15,9 @@ public class MSBController {
 	private static final Logger LOGGER = LogManager.getLogger(MSBController.class);
 
 	@RequestMapping("/MSB")
-	MSBEntity run() {
+	Boolean run() {
 		LOGGER.info("in esecuzione...");
 		msbService.execute();
-		return msbService.returnEntity();
+		return true;
 	}
 }

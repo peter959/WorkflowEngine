@@ -11,6 +11,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class EngineApplication{
 	
 	public static void main(String[] args) {
-		ConfigurableApplicationContext ctx = SpringApplication.run(EngineApplication.class, args);
+		SpringApplication.run(EngineApplication.class, args);
 	}
 }

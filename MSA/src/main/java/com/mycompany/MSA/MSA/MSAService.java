@@ -14,10 +14,4 @@ public class MSAService {
 		fm.insertResult("microservices/MSA", MSAEntity.getRisultato());
 		LOGGER.info("MSA ESEGUITO");
 	}
-
-	MSAEntity returnEntity() {
-		MSAEntity msa = new MSAEntity("MSA");
-		return msa;
-	}
-
 }

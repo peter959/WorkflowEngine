@@ -9,16 +9,16 @@ import org.apache.logging.log4j.Logger;
 
 @RestController
 public class MSCController {
-	
-	private static final Logger LOGGER = LogManager.getLogger(MSCController.class);
 
+	private static final Logger LOGGER = LogManager.getLogger(MSCController.class);
+	
 	@Autowired
 	MSCService mscService;
 
 	@RequestMapping("/MSC")
-	MSCEntity run() {
+	Boolean run() {
 		LOGGER.info("in esecuzione...");
 		mscService.execute();
-		return mscService.returnEntity();
+		return true;
 	}
 }

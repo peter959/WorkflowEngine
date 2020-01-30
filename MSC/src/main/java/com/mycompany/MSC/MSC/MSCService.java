@@ -14,9 +14,4 @@ public class MSCService {
 		fm.getAndUnion("microservices/MSA/result", "microservices/MSB/result", "microservices/MSC");
 		LOGGER.info("MSC ESEGUITO");
 	}
-
-	MSCEntity returnEntity() {
-		MSCEntity msc = new MSCEntity("MSC");
-		return msc;
-	}
 }

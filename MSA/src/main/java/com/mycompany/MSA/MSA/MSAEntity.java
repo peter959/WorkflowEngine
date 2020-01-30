@@ -4,20 +4,9 @@ package com.mycompany.MSA.MSA;
 
 //@Entity
 public class MSAEntity { 
-private String name;
-final static private String risultato = "Topolino";
+	final static private String risultato = "Topolino";
 	
 	public MSAEntity() {};
-	
-	
-	public MSAEntity(String name) {
-		this.name  = name;
-	};
-	
-	public String getName() {
-		return this.name;
-	}
-
 	static public String getRisultato() {
 		return risultato;
 	}

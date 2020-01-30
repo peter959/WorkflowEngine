@@ -14,9 +14,4 @@ public class MSBService {
 		fm.insertResult("microservices/MSB", MSBEntity.getRisultato());
 		LOGGER.info("MSB ESEGUITO");
 	}
-
-	MSBEntity returnEntity() {
-		MSBEntity msb = new MSBEntity("MSB");
-		return msb;
-	}
 }

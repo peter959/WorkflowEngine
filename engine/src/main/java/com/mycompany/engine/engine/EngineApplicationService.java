@@ -28,7 +28,7 @@ public class EngineApplicationService {
 	List<GraphNode> workflow;
 	GraphManager gm;
 	private static final Logger LOGGER = LogManager.getLogger(EngineApplicationService.class);
-	private Map<String, CompletableFuture<MSResult>> taskMap = new HashMap<>();
+	private Map<String, CompletableFuture<Boolean>> taskMap = new HashMap<>();
 	private Map<String, EntityProxy> proxyMap = new HashMap<>();
 
 	void initializeProxyMap() {
@@ -77,7 +77,7 @@ public class EngineApplicationService {
 					prevTasks[i] = taskMap.get(gm.getIncomingNodesFromNode(microservice).get(i).getId());
 				}
 				CompletableFuture.allOf(prevTasks).join();
-				CompletableFuture<MSResult> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
+				CompletableFuture<Boolean> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
 				LOGGER.info(microservice.getId() + " LANCIATO");
 				taskMap.put(microservice.getId(), task);
 
@@ -89,15 +89,15 @@ public class EngineApplicationService {
 					// SE E' START NON ATTENDERE NESSUNO
 					LOGGER.info(microservice.getId() + " " + "NON ATTENDE NESSUNO");
 
-					CompletableFuture<MSResult> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
+					CompletableFuture<Boolean> task = CompletableFuture.supplyAsync(() -> proxyMap.get(microservice.getId()).run());
 					LOGGER.info(microservice.getId() + " LANCIATO");
 					taskMap.put(microservice.getId(), task);
 				}
 				else {
 					// SE NON E' START, ATTENDI QUELLO PRECEDENTE
 					LOGGER.info(microservice.getId() + " " + "ATTENDE " + prev.getId());
-					CompletableFuture<MSResult> prevTask = taskMap.get(prev.getId());
-					CompletableFuture<MSResult> task = prevTask.thenApply(result -> proxyMap.get(microservice.getId()).run());
+					CompletableFuture<Boolean> prevTask = taskMap.get(prev.getId());
+					CompletableFuture<Boolean> task = prevTask.thenApply(result -> proxyMap.get(microservice.getId()).run());
 					LOGGER.info(microservice.getId() + " LANCIATO");
 					taskMap.put(microservice.getId(), task);
 				}

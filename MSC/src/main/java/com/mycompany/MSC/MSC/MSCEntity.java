@@ -4,18 +4,7 @@ package com.mycompany.MSC.MSC;
 
 //@Entity
 public class MSCEntity { 
-	private String name;
 
 	public MSCEntity() {};
-	
-	
-	public MSCEntity(String name) {
-		this.name  = name;
-	};
-
-
-	public String getName() {
-		return this.name;
-	}
 
 }

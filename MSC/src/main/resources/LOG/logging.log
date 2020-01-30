@@ -225,3 +225,12 @@
 2020-01-29T14:41:44.465+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
 2020-01-29T14:41:44.628+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
 2020-01-29T14:41:44.628+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto
+2020-01-30T12:37:16.207+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-30T12:37:19.451+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MscApplication in 4.18 seconds (JVM running for 5.562)
+2020-01-30T16:18:00.913+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-30T16:18:03.866+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MscApplication in 3.899 seconds (JVM running for 5.309)
+2020-01-30T16:19:02.077+0100 com.mycompany.MSC.MSC.MSCController.run(MSCController.java:20) INFO in esecuzione...
+2020-01-30T16:19:02.161+0100 com.mycompany.MSC.MSC.MSCService.execute(MSCService.java:15) INFO MSC ESEGUITO
+2020-01-30T16:19:03.887+0100 com.mycompany.MSC.MSC.FirebaseManager$1.onDataChange(FirebaseManager.java:76) INFO Topolino
+2020-01-30T16:19:04.054+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:82) INFO Pluto
+2020-01-30T16:19:04.054+0100 com.mycompany.MSC.MSC.FirebaseManager$1$1.onDataChange(FirebaseManager.java:83) INFO TopolinoPluto

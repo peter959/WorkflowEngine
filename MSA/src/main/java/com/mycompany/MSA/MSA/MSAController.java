@@ -15,9 +15,9 @@ public class MSAController {
 	private static final Logger LOGGER = LogManager.getLogger(MSAController.class);
 
 	@RequestMapping("/MSA")
-	MSAEntity run() {
+	Boolean run() {
 		LOGGER.info("in esecuzione...");
 		msaService.execute();
-		return msaService.returnEntity();
+		return true;
 	}
 }

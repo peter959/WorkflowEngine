@@ -76,3 +76,10 @@
 2020-01-29T14:41:42.435+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
 2020-01-29T14:41:42.540+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
 2020-01-29T14:41:42.540+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
+2020-01-30T12:36:52.854+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-30T12:36:56.844+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 4.887 seconds (JVM running for 6.46)
+2020-01-30T16:17:57.719+0100 org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) INFO No active profile set, falling back to default profiles: default
+2020-01-30T16:18:01.718+0100 org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) INFO Started MsaApplication in 5.154 seconds (JVM running for 6.758)
+2020-01-30T16:19:01.833+0100 com.mycompany.MSA.MSA.MSAController.run(MSAController.java:19) INFO in esecuzione...
+2020-01-30T16:19:01.938+0100 com.mycompany.MSA.MSA.FirebaseManager.insertResult(FirebaseManager.java:55) INFO Topolino inserito nel database
+2020-01-30T16:19:01.938+0100 com.mycompany.MSA.MSA.MSAService.execute(MSAService.java:15) INFO MSA ESEGUITO
