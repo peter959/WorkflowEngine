@@ -50,14 +50,6 @@ public class EngineApplicationService {
 		return workflowString;
 	}
 
-	private List<String> getWaitingList(GraphNode microservice) {
-		List<String> waitingList = new ArrayList<String>();
-		for (int i = 0; i < gm.getIncomingNodesFromNode(microservice).size(); i++) {
-			waitingList.add(gm.getIncomingNodesFromNode(microservice).get(i).getId());
-		}
-		return waitingList;
-	}
-
 	public void run() {
 		initializeGraphManager();
 		initializeProxyMap();
@@ -69,7 +61,7 @@ public class EngineApplicationService {
 
 			if (incomingNodes > 1) {
 				// CASO IN CUI CI SONO PIU MICROSERVIZI DA ATTENDERE
-				LOGGER.info(microservice.getId() + " " + "ATTENDE" + " " + getWaitingList(microservice) ); // incomingNodes può essere ottenuto in getWaitingList senza passarla
+				LOGGER.info(microservice.getId() + " " + "ATTENDE" + " " + gm.getIncomingNodesFromNode(microservice) ); // incomingNodes può essere ottenuto in getWaitingList senza passarla
 
 				CompletableFuture[] prevTasks = new CompletableFuture[incomingNodes]; // array dei task precedenti a microservice
 

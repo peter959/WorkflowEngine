@@ -71,7 +71,7 @@ public class GraphManager {
         System.out.println("}");
     }
 
-    // Ritorna una lista di NODI USCENTI da un NODO in input
+    // Ritorna una lista di NODI ENRANTI in un NODO in input
     public  List<GraphNode> getIncomingNodesFromNode(final GraphNode node) {
         final Map<String, GraphEdge> edges = parser.getEdges();
         final List<GraphNode> incoming = new ArrayList<GraphNode>();
@@ -105,7 +105,7 @@ public class GraphManager {
         }
     }
 
-    public List<GraphNode> BFS(/*GraphNode s*/) {
+    public List<GraphNode> BFS() {
         GraphNode s = start;
         LOGGER.info("Inizio procedura BFS");
 
@@ -140,7 +140,6 @@ public class GraphManager {
             s = queue.poll();
             LOGGER.debug("Elemento uscito dalla coda e stampato: " + s.getId());
             LOGGER.debug("Numero di nodi contati: " + nNodes);
-            //System.out.println(s.getId() + " ");
             result.add(s);
 
 
